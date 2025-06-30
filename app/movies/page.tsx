@@ -73,7 +73,7 @@ export default function MoviesPage() {
             selectedLanguage={selectedLanguage}
             onLanguageChange={setSelectedLanguage}
             sortBy={sortBy}
-            onSortChange={(value) => setSortBy(value as 'title' | 'year' | 'rating' | 'runtime')}
+            onSortChange={(value: string) => setSortBy(value as 'title' | 'year' | 'rating' | 'runtime')}
             viewMode={viewMode}
             onViewModeChange={setViewMode}
             categories={mockCategories}

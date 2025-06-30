@@ -25,9 +25,19 @@ export const mockMovies: Movie[] = [
     category: 'Drama',
     created_at: '2023-01-01',
     type: 'movie',
-    languages: getRandomLanguages(),
+    languages: ['VF', 'VOSTFR'],
     director: 'Frank Darabont',
-    actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton']
+    actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '2',
@@ -45,7 +55,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: getRandomLanguages(),
     director: 'Christopher Nolan',
-    actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page']
+    actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '3',
@@ -63,7 +83,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: getRandomLanguages(),
     director: 'Quentin Tarantino',
-    actors: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson']
+    actors: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '4',
@@ -81,7 +111,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF', 'VOSTFR'],
     director: 'Christopher Nolan',
-    actors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart']
+    actors: ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '5',
@@ -99,7 +139,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF'],
     director: 'David Fincher',
-    actors: ['Brad Pitt', 'Edward Norton', 'Helena Bonham Carter']
+    actors: ['Brad Pitt', 'Edward Norton', 'Helena Bonham Carter'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '6',
@@ -117,7 +167,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VOSTFR'],
     director: 'Lana Wachowski',
-    actors: ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss']
+    actors: ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '7',
@@ -134,7 +194,17 @@ export const mockMovies: Movie[] = [
     created_at: '2023-01-01',
     director: 'Christopher Nolan',
     actors: ['Matthew McConaughey', 'Anne Hathaway', 'Jessica Chastain'],
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '8',
@@ -152,7 +222,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF'],
     director: 'Robert Zemeckis',
-    actors: ['Tom Hanks', 'Robin Wright', 'Gary Sinise']
+    actors: ['Tom Hanks', 'Robin Wright', 'Gary Sinise'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '9',
@@ -170,7 +250,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF', 'VOSTFR'],
     director: 'Christopher Nolan',
-    actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page']
+    actors: ['Leonardo DiCaprio', 'Joseph Gordon-Levitt', 'Ellen Page'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '10',
@@ -188,14 +278,24 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF'],
     director: 'Peter Jackson',
-    actors: ['Elijah Wood', 'Ian McKellen', 'Viggo Mortensen']
+    actors: ['Elijah Wood', 'Ian McKellen', 'Viggo Mortensen'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '11',
     title: 'Pulp Fiction',
     description: 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
-    poster_path: 'https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg',
-    backdrop_path: 'https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2QM528GluxMcE.jpg',
+    poster_path: 'https://image.tmdb.org/t/p/w500/fIE3lAGcZDV1G6XM5KmuWnNsPp1.jpg',
+    backdrop_path: 'https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2QM528GluxMcAd.jpg',
     release_date: '1994-10-14',
     runtime: 154,
     genre: ['Crime', 'Drama'],
@@ -204,27 +304,44 @@ export const mockMovies: Movie[] = [
     category: 'Crime',
     created_at: '2023-01-01',
     type: 'movie',
-    languages: ['VOSTFR'],
-    director: 'Quentin Tarantino',
-    actors: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson']
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '12',
-    title: 'The Godfather',
-    description: 'The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant son.',
-    poster_path: 'https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg',
+    title: 'The Goodfellas',
+    description: 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners.',
+    poster_path: 'https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg',
     backdrop_path: 'https://image.tmdb.org/t/p/original/6uoiU4r1tK2XGEdqM5jF6yF6l1n.jpg',
-    release_date: '1972-03-24',
-    runtime: 175,
-    genre: ['Crime', 'Drama'],
-    rating: 9.2,
+    release_date: '1990-09-19',
+    runtime: 146,
+    genre: ['Biography', 'Crime', 'Drama'],
+    rating: 8.7,
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
     type: 'movie',
     languages: ['VF', 'VOSTFR'],
     director: 'Francis Ford Coppola',
-    actors: ['Marlon Brando', 'Al Pacino', 'James Caan']
+    actors: ['Marlon Brando', 'Al Pacino', 'James Caan'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '13',
@@ -242,7 +359,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF'],
     director: 'Francis Ford Coppola',
-    actors: ['Al Pacino', 'Robert De Niro', 'Robert Duvall']
+    actors: ['Al Pacino', 'Robert De Niro', 'Robert Duvall'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '14',
@@ -260,7 +387,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VOSTFR'],
     director: 'Jonathan Demme',
-    actors: ['Jodie Foster', 'Anthony Hopkins', 'Lawrence A. Bonney']
+    actors: ['Jodie Foster', 'Anthony Hopkins', 'Lawrence A. Bonney'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '15',
@@ -278,7 +415,17 @@ export const mockMovies: Movie[] = [
     type: 'movie',
     languages: ['VF', 'VOSTFR'],
     director: 'Roger Allers',
-    actors: ['Matthew Broderick', 'Jeremy Irons', 'James Earl Jones']
+    actors: ['Matthew Broderick', 'Jeremy Irons', 'James Earl Jones'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '16',
@@ -293,7 +440,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Sci-Fi',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '17',
@@ -308,7 +465,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Sci-Fi',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '18',
@@ -323,7 +490,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '19',
@@ -338,7 +515,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '20',
@@ -353,7 +540,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '21',
@@ -368,7 +565,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '22',
@@ -383,7 +590,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '23',
@@ -398,7 +615,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '24',
@@ -413,7 +640,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '25',
@@ -428,7 +665,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Sci-Fi',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '26',
@@ -443,7 +690,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '27',
@@ -458,7 +715,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '28',
@@ -473,7 +740,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '29',
@@ -488,7 +765,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '30',
@@ -503,7 +790,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '31',
@@ -518,7 +815,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '32',
@@ -533,7 +840,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '33',
@@ -548,7 +865,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '34',
@@ -563,7 +890,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '35',
@@ -578,7 +915,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '36',
@@ -593,7 +940,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '37',
@@ -608,7 +965,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '38',
@@ -623,7 +990,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '39',
@@ -638,7 +1015,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '40',
@@ -653,7 +1040,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Sci-Fi',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '41',
@@ -668,7 +1065,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Comedy',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '42',
@@ -683,7 +1090,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '43',
@@ -698,7 +1115,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '44',
@@ -713,7 +1140,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '45',
@@ -728,7 +1165,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '46',
@@ -743,7 +1190,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '47',
@@ -758,7 +1215,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '48',
@@ -773,7 +1240,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '49',
@@ -788,7 +1265,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Drama',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '50',
@@ -803,7 +1290,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Action',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '51',
@@ -818,7 +1315,17 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
-    type: 'movie'
+    type: 'movie',
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '52',
@@ -833,54 +1340,20 @@ export const mockMovies: Movie[] = [
     video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
     category: 'Crime',
     created_at: '2023-01-01',
-    type: 'movie'
-  },
-  {
-    id: '54',
-    title: 'Forrest Gump',
-    description: 'The presidencies of Kennedy and Johnson, the Vietnam War, and more through the eyes of Forrest Gump.',
-    poster_path: 'https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg',
-    backdrop_path: 'https://image.tmdb.org/t/p/original/4dQvS8b6EJb9QZ3M3B1b2r6Z4bD.jpg',
-    release_date: '1994-07-06',
-    runtime: 142,
-    genre: ['Drama', 'Romance'],
-    rating: 8.8,
-    video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
-    category: 'Drama',
-    created_at: '2023-01-01',
-    type: 'movie'
-  },
-  {
-    id: '55',
-    title: 'Inception',
-    description: 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
-    poster_path: 'https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg',
-    backdrop_path: 'https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg',
-    release_date: '2010-07-16',
-    runtime: 148,
-    genre: ['Action', 'Sci-Fi', 'Thriller'],
-    rating: 8.8,
-    video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
-    category: 'Sci-Fi',
-    created_at: '2023-01-01',
-    type: 'movie'
-  },
-  {
-    id: '56',
-    title: 'The Matrix',
-    description: 'A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free.',
-    poster_path: 'https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg',
-    backdrop_path: 'https://image.tmdb.org/t/p/original/7u3pxc0K1wx36I6Cyz9v8qZMIWz.jpg',
-    release_date: '1999-03-31',
-    runtime: 136,
-    genre: ['Action', 'Sci-Fi'],
-    rating: 8.7,
-    video_url: 'https://vidmoly.to/embed-7zo3llworr98.html',
-    category: 'Sci-Fi',
-    created_at: '2023-01-01',
     type: 'movie',
-    director: 'Lana Wachowski, Lilly Wachowski',
-    actors: ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss']
+    languages: ['VF', 'VOSTFR'],
+    director: 'Francis Ford Coppola',
+    actors: ['Marlon Brando', 'Al Pacino', 'James Caan'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '57',
@@ -1435,7 +1908,17 @@ export const mockMovies: Movie[] = [
       { season: 5, episodes: 10 }
     ],
     director: 'Álex Pina',
-    actors: ['Úrsula Corberó', 'Itziar Ituño', 'Álvaro Morte']
+    actors: ['Úrsula Corberó', 'Itziar Ituño', 'Álvaro Morte'],
+    video_urls: {
+      vf: [
+        'https://vidmoly.to/embed-vqvgyfdsnp8a.html',
+        'https://my.mail.ru/video/embed/7907601233697835253'
+      ],
+      vostfr: [
+        'https://vidmoly.to/embed-7zo3llworr98.html',
+        'https://my.mail.ru/video/embed/7907601233697835247'
+      ]
+    }
   },
   {
     id: '91',

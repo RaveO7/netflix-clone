@@ -31,6 +31,10 @@ export interface Movie {
   number_of_seasons?: number
   seasons?: { season: number; episodes: number }[]
   languages?: string[] // VF, VOSTFR, etc.
+  video_urls?: {
+    vf: string[]
+    vostfr: string[]
+  }
 }
 
 export interface WatchHistory {

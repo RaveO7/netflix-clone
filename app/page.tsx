@@ -398,14 +398,7 @@ export default function Home() {
               <span className="text-gray-400 text-sm">{t.footer.country}</span>
             </div>
             <p className="text-gray-500 text-xs">{t.footer.recaptcha}<a href="#" className="underline">{t.footer.learnMore}</a></p>
-          </div>
-          {/* Sélecteur de langue en bas à gauche */}
-          <div className="fixed left-4 bottom-4 z-50">
-            <select className="bg-black/60 border border-gray-500 text-white rounded px-3 py-1 text-base" value={language} onChange={e => setLanguage(e.target.value as 'fr' | 'en')}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-            </select>
-          </div>
+          </div>    
         </footer>
       </div>
 

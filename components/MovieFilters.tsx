@@ -1,7 +1,6 @@
 import { Filter, Search, Grid, List } from 'lucide-react'
 import { Category } from '@/lib/supabase'
 import { motion, useReducedMotion } from 'framer-motion'
-import { useRef } from 'react'
 
 interface MovieFiltersProps {
   searchTerm: string
@@ -16,30 +15,6 @@ interface MovieFiltersProps {
   onViewModeChange: (mode: 'grid' | 'list') => void
   categories: Category[]
   placeholder?: string
-}
-
-function RippleButton({ children, className = '', onClick, ...props }: any) {
-  const btnRef = useRef<HTMLButtonElement>(null)
-  function handleClick(e: React.MouseEvent) {
-    const button = btnRef.current
-    if (button) {
-      const circle = document.createElement('span')
-      const diameter = Math.max(button.clientWidth, button.clientHeight)
-      const radius = diameter / 2
-      circle.style.width = circle.style.height = `${diameter}px`
-      circle.style.left = `${e.clientX - button.getBoundingClientRect().left - radius}px`
-      circle.style.top = `${e.clientY - button.getBoundingClientRect().top - radius}px`
-      circle.className = 'ripple-effect'
-      button.appendChild(circle)
-      setTimeout(() => circle.remove(), 500)
-    }
-    onClick?.(e)
-  }
-  return (
-    <button ref={btnRef} className={`relative overflow-hidden ${className}`} onClick={handleClick} {...props}>
-      {children}
-    </button>
-  )
 }
 
 export default function MovieFilters({
@@ -124,9 +99,9 @@ export default function MovieFilters({
 
           {/* View Mode Toggle */}
           <div className="flex items-center space-x-2 bg-netflix-gray border border-gray-600 rounded-lg p-1">
-            <RippleButton
+            <button
               onClick={() => onViewModeChange('grid')}
-              className={`p-2 rounded transition-colors flex items-center justify-center focus:ring-2 focus:ring-netflix-red/60 active:scale-95 ${
+              className={`p-2 rounded transition-colors flex items-center justify-center ${
                 viewMode === 'grid' 
                   ? 'bg-netflix-red text-white ' 
                   : 'bg-transparent text-gray-400 hover:text-white '
@@ -134,10 +109,10 @@ export default function MovieFilters({
               aria-label="Grid view"
             >
               <Grid className="w-4 h-4" />
-            </RippleButton>
-            <RippleButton
+            </button>
+            <button
               onClick={() => onViewModeChange('list')}
-              className={`p-2 rounded transition-colors flex items-center justify-center focus:ring-2 focus:ring-netflix-red/60 active:scale-95 ${
+              className={`p-2 rounded transition-colors flex items-center justify-center ${
                 viewMode === 'list' 
                   ? 'bg-netflix-red text-white' 
                   : 'bg-transparent text-gray-400 hover:text-white'
@@ -145,7 +120,7 @@ export default function MovieFilters({
               aria-label="List view"
             >
               <List className="w-4 h-4" />
-            </RippleButton>
+            </button>
           </div>
         </div>
       </div>

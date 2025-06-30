@@ -13,7 +13,7 @@ export function useHorizontalScroll({
   gap = 100,
   visibleCards = 5
 }: UseHorizontalScrollOptions = {}) {
-  const rowRef = useRef<HTMLDivElement>(null)
+  const rowRef = useRef<HTMLUListElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(false)
 

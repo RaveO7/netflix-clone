@@ -13,6 +13,7 @@ import { useMovieInteractions } from '@/hooks/useMovieInteractions'
 export default function BrowsePage() {
   const searchParams = useSearchParams()
   const category = searchParams.get('category')
+  const movieId = searchParams.get('movie')
   const [featuredMovie, setFeaturedMovie] = useState<Movie | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -21,18 +22,33 @@ export default function BrowsePage() {
     modalOpen,
     handleMovieClick,
     handlePlay,
-    handleCloseModal
+    handleCloseModal,
+    setSelectedMovie,
+    setModalOpen
   } = useMovieInteractions()
 
   useEffect(() => {
     // Simulate loading
     const timer = setTimeout(() => {
-    setFeaturedMovie(mockMovies[0])
+      setFeaturedMovie(mockMovies[0])
       setIsLoading(false)
     }, 500)
 
     return () => clearTimeout(timer)
   }, [])
+
+  // Ouvre le modal si l'URL contient ?movie=SLUG
+  useEffect(() => {
+    if (movieId) {
+      // Fonction utilitaire pour générer un slug à partir du titre (doit matcher celle du hook)
+      const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+      const found = mockMovies.find(m => slugify(m.title) === movieId)
+      if (found) {
+        setSelectedMovie(found)
+        setModalOpen(true)
+      }
+    }
+  }, [movieId, setSelectedMovie, setModalOpen])
 
   if (isLoading) {
     return (
@@ -78,11 +94,28 @@ export default function BrowsePage() {
                 </div>
               </div>
             </div>
+            <div className="relative group">
+              <button
+                className="
+                  opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                  absolute bottom-8 right-8
+                  w-14 h-14 flex items-center justify-center
+                  rounded-full
+                  bg-white/10 backdrop-blur-md
+                  border border-white/30
+                  shadow-lg
+                  hover:bg-white/20
+                "
+                aria-label="Ajouter"
+              >
+                <span className="text-white text-3xl font-bold">+</span>
+              </button>
+            </div>
           </div>
         )}
 
         {/* Content Sections */}
-        <div className="px-4 md:px-8 lg:px-16 py-8 space-y-12">
+        <div className="px-3 md:px-8 lg:px-16 py-8 space-y-12">
           {/* Continue Watching */}
           <CategoryRow 
             title="Continue Watching" 

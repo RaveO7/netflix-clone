@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-netflix-black text-netflix-white;
+  }
+}
+
+@layer components {
+  .netflix-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+  
+  .movie-card {
+    @apply relative overflow-hidden rounded-md transition-all duration-300 hover:scale-105 hover:z-10;
+  }
+  
+  .movie-card:hover .movie-info {
+    @apply opacity-100;
+  }
+  
+  .movie-info {
+    @apply absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 transition-opacity duration-300;
+  }
+  
+  .navbar-blur {
+    @apply backdrop-blur-md bg-netflix-dark/80;
+  }
+  
+  .btn-primary {
+    @apply bg-netflix-red hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-netflix-gray hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply bg-netflix-gray border border-gray-600 text-white placeholder-gray-400 rounded px-4 py-2 focus:outline-none focus:border-netflix-red transition-colors duration-200;
+  }
+  
+  .ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-anim 0.5s linear;
+    background: rgba(229, 9, 20, 0.3);
+    pointer-events: none;
+    z-index: 10;
+  }
+  @keyframes ripple-anim {
+    to {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes spin-slow {
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 2.5s linear infinite;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #fff 25%, #e50914 50%, #fff 75%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s infinite linear;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+} 
